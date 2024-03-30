@@ -71,16 +71,22 @@
             .then(res => res.json())
             .then(posts => {
                 for (const post of posts) {
+
                     const div = document.createElement('div')
                     const h3 = document.createElement('h3')
                     const p = document.createElement('p')
                     const button = document.createElement('button')
+
                     h3.innerText = `id - ${post.id}`
                     p.innerText = `title - ${post.title}`
                     button.innerText = 'Post details'
+
                     div.append(h3, p, button)
+
                     div.className = 'post'
+
                     postsContainer.appendChild(div)
+
                     button.addEventListener('click', ()=>{
                         location.href =`post-details.html?id=${post.id}&title=${post.title}&body=${post.body}`
                     })

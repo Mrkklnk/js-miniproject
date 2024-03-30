@@ -21,10 +21,6 @@ body{
     border: #745546 solid 0.2vw;
 }
 
-#userInfoBlock:hover{
-    transform: scale(1.01);
-}
-
 #postDetailsButton{
     display: flex;
     justify-content: center;
