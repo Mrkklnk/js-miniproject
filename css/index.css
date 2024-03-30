@@ -1,0 +1,45 @@
+#main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.userBlock{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 42vh;
+    width: 35vw;
+    border: #745546 solid 0.4vw;
+    border-radius: 0.5vw;
+    margin: 2vw;
+}
+
+.userBlock:hover{
+    transform: scale(1.01);
+}
+
+h3{
+    margin: 1vw;
+    font-size: 2.6vw;
+}
+
+p{
+    margin: 1vw;
+    font-size: 2.1vw;
+}
+
+button{
+    margin: 1vw;
+    height: 3vw;
+    width: 14vw;
+    font-size: 1.3vw;
+}
+
+button{
+    margin: 0.8vw;
+    height: 3vw;
+    width: 14vw;
+    font-size: 1.3vw;
+}

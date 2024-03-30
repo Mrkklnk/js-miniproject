@@ -1,0 +1,79 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#userInfoBlock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    height: 45vh;
+    border: #745546 solid 0.2vw;
+}
+
+#userInfoBlock:hover{
+    transform: scale(1.01);
+}
+
+#postDetailsButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3vw;
+    width: 90%;
+    margin-top: 2.6vw;
+    font-size: 1.7vw;
+}
+
+#postsContainer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.post{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 14vh;
+    width: 17vw;
+    border: #745546 solid 0.2vw;
+    margin-top: 2.6vw;
+}
+
+.post:hover{
+    transform: scale(1.01);
+}
+
+h3{
+    margin: 0.2vw;
+    font-size: 1.1vw;
+}
+
+p{
+    margin: 0.2vw;
+    font-size: 0.7vw;
+}
+
+button{
+    margin: 0.2vw;
+    height: 3vh;
+    width: 8vw;
+    font-size: 0.9vw;
+}
+
+#disableButton{
+    width: 90%;
+    margin-top: 2vw;
+}

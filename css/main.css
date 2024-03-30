@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    background: rgba(225,159,130,0.4)
+}
+
+div{
+    background: rgba(175,120,97,0.74);
+}
+
+button{
+    background: #e1beac;
+    border: #745546 solid 0.2vw;
+    border-radius: 0.5vw;
+    font-family: "Roboto Light", sans-serif;
+}
+
+button:hover{
+    background: rgba(225,190,172,0.62);
+}
+
+button:active{
+    background: #e1beac;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3vw;
+    width: 90%;
+    text-decoration: none;
+    color: black;
+    font-size: 1.7vw;
+    background: rgba(175,120,97,0.74);
+    border: #745546 solid 0.2vw;
+    border-radius: 2vw;
+    font-family: "Roboto Light", sans-serif;
+    margin-top: 1.2vw;
+}
+
+a:hover {
+    background: rgba(175,120,97,0.83);
+}
+
+a:active{
+    background: rgba(175,120,97,0.74);
+}
+
+h3{
+   font-family: "Roboto Light", sans-serif;
+}
+
+p{
+    font-family: "Roboto Light", sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 9vw;
+    font-size: 5vw;
+    font-family: "Roboto Light", sans-serif;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1vw;
+    font-family: "Roboto Light", sans-serif;
+}

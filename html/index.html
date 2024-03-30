@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+</head>
+<body>
+
+<main id="main">
+</main>
+
+<script>
+    const main = document.getElementById('main')
+
+    const URL = 'https://jsonplaceholder.typicode.com/users'
+
+        fetch(URL)
+            .then(res => res.json())
+            .then(users => {
+                for (const user of users) {
+
+                    const div = document.createElement('div')
+                    const h3 = document.createElement('h3')
+                    const p = document.createElement('p')
+                    const button = document.createElement('button')
+
+                    h3.innerText = `Id - ${user.id}`
+                    p.innerText = `Name - ${user.name}`
+                    button.innerText = 'User details'
+
+                    div.append(h3, p, button)
+                    main.appendChild(div)
+
+                    div.className='userBlock'
+
+                    button.addEventListener('click', ()=>{
+                        location.href ='user-details.html?id='+user.id
+                    })
+                }
+            })
+
+</script>
+</body>
+</html>
